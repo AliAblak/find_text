@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html leng="en">
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UFT-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Eğitim Ders</title>
 </head>
 
@@ -41,11 +41,9 @@
 
     <script type="text/javascript" language="javascript">
     var valueone    =   document.getElementById("content").innerHTML;
-    var pattern     =   /[A-Z0-9a-z_.-]+@[A-Z0-9a-z_\-]+\[A-Za-z]{2,3}/gi;
-    var result      =   valueone.match(pattern);
-    document.getElementById("result").innerHTML = result;
-
-
+    var pattern     =   /[A-Z0-9a-z_.-]+@[A-Z0-9a-z_\-]+\.[A-Za-z]{2,3}/gi;
+    var resultone      =   valueone.match(pattern);
+    document.getElementById("result").innerHTML = resultone;
     </script>
 </body>
 </html>
